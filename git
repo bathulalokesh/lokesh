@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+class Solution{
+static int solve(int X,int p){
+int res=X;
+while(X>0){
+int t=X-(int)(p/100*X);
+res=res+t;
+X=t;}
+return res;
+}
+public static void main(String args[]){
+Scanner s=new Scanner(sytsem.in);
+int X=s.nextInt();
+int p=s.nextInt();
+System.out.println(solve(X,p));
+}
+}
